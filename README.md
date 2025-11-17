@@ -1,0 +1,1 @@
+This is a limited application that is intended for temporary use at Sienna for converting P4 IPC boards into P5 after the resistor rework. The application will also write genealogy in addition to flashing the special bootloader which does the conversion.
