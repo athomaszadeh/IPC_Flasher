@@ -4,10 +4,10 @@ import time
 # -----------------------------
 # Configuration
 # -----------------------------
-CHANNEL = 'PCAN_USBBUS1'   # 0x57
+CHANNEL = 'PCAN_USBBUS1'
 BITRATE = 500000
-TARGET_ID = 273154049      # decimal, 29-bit extended
-TIMEOUT_LIMIT = 5.0        # Total seconds to wait
+TARGET_ID = 273154049  # 0x1046A081
+TIMEOUT_LIMIT = 5.0    
 
 # -----------------------------
 # Open CAN bus
@@ -20,10 +20,10 @@ bus = can.Bus(
 
 print(f"Listening for CAN ID: {TARGET_ID}...")
 
-# Track the start time
+# Tracking variables
 start_time = time.time()
-result_value = -1 
-pcba_id = -1  # Default to -1 in case of timeout
+pcba_id = -1          # Default: Bus exists, but signal not found
+bus_has_traffic = False # Flag to detect if ANY CAN traffic exists
 
 # -----------------------------
 # Receive loop
@@ -32,9 +32,13 @@ try:
     while True:
         # 1. Check for total timeout
         if (time.time() - start_time) > TIMEOUT_LIMIT:
-            # Set the requested error value
-            pcba_id = -1
-            print(f"Timeout reached. PCBAID = {pcba_id}")
+            # If the timeout is hit and we never saw a single frame
+            if not bus_has_traffic:
+                pcba_id = 0
+                print(f"Timeout: No CAN traffic detected. pcba_id = {pcba_id}")
+            else:
+                pcba_id = -1
+                print(f"Timeout: Bus active but ID {TARGET_ID} not found. pcba_id = {pcba_id}")
             break
 
         # 2. Poll the bus
@@ -43,6 +47,9 @@ try:
         if msg is None:
             continue
 
+        # --- NEW LOGIC: Any message received proves the bus is alive ---
+        bus_has_traffic = True
+
         # 3. Match 29-bit ID
         if msg.is_extended_id and msg.arbitration_id == TARGET_ID:
             data = msg.data
@@ -50,8 +57,7 @@ try:
             if len(data) < 6:
                 continue
 
-            # Extract bytes
-            # Byte 4 is the PCBAID
+            # Extract PCBAID from Byte 4
             pcba_id = data[4]
             byte5 = data[5]
 

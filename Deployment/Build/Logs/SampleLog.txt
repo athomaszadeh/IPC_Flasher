@@ -1,0 +1,183 @@
+Checking the PCBAID
+Listening for CAN ID: 273154049...
+Matched frame | Value = 1280 (0x0500) | PCBAID = 5
+uptime library not available, timestamps are relative to boot time and not to Epoch UTC
+
+ -d=peak_pcanusb -c=0 -ni=0 -board=ipc "C:\Users\sa-inverterdev-bi\Documents\GitHub\IPC_Flasher\Supporting Files\IPC_app_ota_P5_C1_rc_25.31.07.srec"
+{"cmd_info":"BootCommander - Meta"}
+{"ver_info":"Lunar Energy Version: 044863c766778a9c"}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"starting","seg":0,"percent":0,"error":0}
+{"info":"Baudrate = 500000 bit/sec"}
+{"info":"Board name = ipc"}
+{"info":"Board type = 1"}
+{"info":"Node Id = 1h"}
+{"info":"Node Instance = 0h"}
+{"info":"Transmit CAN identifier = 140C0001h"}
+{"info":"Receive CAN identifier = 140C1001h"}
+{"info":"Reset CAN identifier = 10042001h"}
+{"info":"Retry Count = 3 (zero means indefinite)"}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"loading","seg":0,"percent":0,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"connecting","seg":0,"percent":0,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"erasing","seg":0,"percent":100,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"erasing","seg":1,"percent":15,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"erasing","seg":1,"percent":30,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"erasing","seg":1,"percent":46,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"erasing","seg":1,"percent":61,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"erasing","seg":1,"percent":77,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"erasing","seg":1,"percent":92,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"erasing","seg":1,"percent":100,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":0,"percent":0,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":0,"percent":100,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":0,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":1,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":2,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":3,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":4,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":5,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":6,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":7,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":8,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":9,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":10,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":11,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":12,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":13,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":14,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":15,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":16,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":17,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":18,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":19,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":20,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":21,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":22,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":23,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":24,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":25,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":26,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":27,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":28,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":29,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":30,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":31,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":32,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":33,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":34,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":35,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":36,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":37,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":38,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":39,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":40,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":41,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":42,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":43,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":44,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":45,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":46,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":47,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":48,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":49,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":50,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":51,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":52,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":53,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":54,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":55,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":56,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":57,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":58,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":59,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":60,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":61,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":62,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":63,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":64,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":65,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":66,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":67,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":68,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":69,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":70,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":71,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":72,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":73,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":74,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":75,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":76,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":77,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":78,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":79,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":80,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":81,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":82,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":83,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":84,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":85,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":86,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":87,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":88,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":89,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":90,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":91,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":92,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":93,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":94,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":95,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":96,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":97,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":98,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":99,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"programming","seg":1,"percent":100,"error":0}
+{"board":"ipc","node_id":1,"node_ins":0,"state":"completed","seg":1,"percent":100,"error":0}
+
+
+Waiting to reboot in 10 seconds...
+Confirming the PCBAID
+Listening for CAN ID: 273154049...
+Matched frame | Value = 1280 (0x0500) | PCBAID = 5
+uptime library not available, timestamps are relative to boot time and not to Epoch UTC
+
+PCBAID is reporting 5, the update was successful!
+Starting UDS Genealogy
+[SEC_SEED] SEND -> 02 27 03 00 00 00 00 00
+[SEC_SEED] RECV <- 06 67 03 10 95 B1 66
+[EXT_SESS] SEND -> 02 10 03 00 00 00 00 00
+[EXT_SESS] RECV <- 06 50 03 00 96 00 96
+[TESTER_P] SEND -> 02 3E 00 00 00 00 00 00
+[TESTER_P] RECV <- 02 7E 00
+
+--- Writing DID 0203: 1006104C03 ---
+[WRITE_FF] SEND -> 10 0D 2E 02 03 31 30 30
+[WRITE_FF] RECV <- 30 08 01
+[WRITE_CF1] SEND -> 21 36 31 30 34 43 30 33
+[WRITE_CF1] RECV <- 03 6E 02 03
+
+--- Writing DID 0204: SIE253300042 ---
+[WRITE_FF] SEND -> 10 0F 2E 02 04 53 49 45
+[WRITE_FF] RECV <- 30 08 01
+[WRITE_CF1] SEND -> 21 32 35 33 33 30 30 30
+[WRITE_CF2] SEND -> 22 34 32 00 00 00 00 00
+[WRITE_CF2] RECV <- 03 6E 02 04
+
+--- Verifying ---
+[READ_0203] SEND -> 03 22 02 03 00 00 00 00
+[READ_0203] RECV <- 10 0D 62 02 03 31 30 30
+[READ_0204] SEND -> 03 22 02 04 00 00 00 00
+[READ_0204] RECV <- 10 0F 62 02 04 53 49 45
+
+Final Results:
+0203: 1006104C03 | Match: True
+0204: SIE253300042 | Match: True
+
+Success!
+uptime library not available, timestamps are relative to boot time and not to Epoch UTC
+
+Final FW version check: 
+Listening for Version Frame ID: 272707585...
+------------------------------
+IPC Boot Version: 3.1.6
+IPC App Version:  25.31.7
+------------------------------
+uptime library not available, timestamps are relative to boot time and not to Epoch UTC
+

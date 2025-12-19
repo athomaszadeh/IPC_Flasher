@@ -16,15 +16,17 @@
 			<Item Name="Console Manager Functions.ctl" Type="VI" URL="../Controls/Console Manager Functions.ctl"/>
 		</Item>
 		<Item Name="SubVIs" Type="Folder">
+			<Item Name="Run Sequence.vi" Type="VI" URL="../SubVIs/Run Sequence.vi"/>
+			<Item Name="Read PCBAID.vi" Type="VI" URL="../SubVIs/Read PCBAID.vi"/>
+			<Item Name="Read FW Version.vi" Type="VI" URL="../SubVIs/Read FW Version.vi"/>
+			<Item Name="Call Geneaology Script.vi" Type="VI" URL="../SubVIs/Call Geneaology Script.vi"/>
 			<Item Name="BC Wrapper.vi" Type="VI" URL="../SubVIs/BC Wrapper.vi"/>
 			<Item Name="Display Results.vi" Type="VI" URL="../SubVIs/Display Results.vi"/>
-			<Item Name="Run Sequence.vi" Type="VI" URL="../SubVIs/Run Sequence.vi"/>
 			<Item Name="Update Console.vi" Type="VI" URL="../SubVIs/Update Console.vi"/>
 			<Item Name="Global Variable.vi" Type="VI" URL="../SubVIs/Global Variable.vi"/>
 			<Item Name="Get FW Path.vi" Type="VI" URL="../SubVIs/Get FW Path.vi"/>
+			<Item Name="Save Console Logs.vi" Type="VI" URL="../SubVIs/Save Console Logs.vi"/>
 			<Item Name="Format SN PN.vi" Type="VI" URL="../SubVIs/Format SN PN.vi"/>
-			<Item Name="Call Geneaology Script.vi" Type="VI" URL="../SubVIs/Call Geneaology Script.vi"/>
-			<Item Name="Read PCBAID.vi" Type="VI" URL="../SubVIs/Read PCBAID.vi"/>
 		</Item>
 		<Item Name="Supporting Files" Type="Folder">
 			<Item Name="BootCommander.exe" Type="Document" URL="../Supporting Files/BootCommander.exe"/>
@@ -35,12 +37,14 @@
 		</Item>
 		<Item Name="Data" Type="Folder">
 			<Item Name="Config.ini" Type="Document" URL="../Data/Config.ini"/>
+			<Item Name="SampleLog.txt" Type="Document" URL="../Logs/SampleLog.txt"/>
 		</Item>
 		<Item Name="Python" Type="Folder">
 			<Item Name="read_pcbaid.py" Type="Document" URL="../Python/read_pcbaid.py"/>
 			<Item Name="uds_ping.py" Type="Document" URL="../Python/uds_ping.py"/>
 			<Item Name="write_read_pnsn.py" Type="Document" URL="../Python/write_read_pnsn.py"/>
 			<Item Name="read_uds.py" Type="Document" URL="../Python/read_uds.py"/>
+			<Item Name="read_versions.py" Type="Document" URL="../Python/read_versions.py"/>
 		</Item>
 		<Item Name="IPC Flasher Main.vi" Type="VI" URL="../IPC Flasher Main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -77,6 +81,7 @@
 				<Property Name="App_INI_GUID" Type="Str">{20D5E4BD-F1AB-4ADF-AD5B-0514D0C6D84B}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
 				<Property Name="App_serverType" Type="Int">0</Property>
+				<Property Name="App_waitDebugging" Type="Bool">true</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{3EA87E59-82A9-47E5-A6BF-EDBAF626F6F2}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">IPC Flasher</Property>
@@ -87,7 +92,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{712DF599-2B62-482B-9CC1-6DF845E294C4}</Property>
-				<Property Name="Bld_version.build" Type="Int">10</Property>
+				<Property Name="Bld_version.build" Type="Int">22</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">IPC Flasher.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../Deployment/Build/NI_AB_PROJECTNAME.exe</Property>
@@ -100,7 +105,13 @@
 				<Property Name="Destination[2].destName" Type="Str">Supporting Files</Property>
 				<Property Name="Destination[2].path" Type="Path">../Deployment/Build/Supporting Files</Property>
 				<Property Name="Destination[2].path.type" Type="Str">relativeToProject</Property>
-				<Property Name="DestinationCount" Type="Int">3</Property>
+				<Property Name="Destination[3].destName" Type="Str">Python</Property>
+				<Property Name="Destination[3].path" Type="Path">../Deployment/Build/Python</Property>
+				<Property Name="Destination[3].path.type" Type="Str">relativeToProject</Property>
+				<Property Name="Destination[4].destName" Type="Str">Logs</Property>
+				<Property Name="Destination[4].path" Type="Path">../Deployment/Build/Logs</Property>
+				<Property Name="Destination[4].path.type" Type="Str">relativeToProject</Property>
+				<Property Name="DestinationCount" Type="Int">5</Property>
 				<Property Name="Source[0].itemID" Type="Str">{1B0135AD-4E7F-4FF2-B5F9-48E05F4AF50E}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
@@ -119,7 +130,7 @@
 				<Property Name="Source[6].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[6].Container.applyInclusion" Type="Bool">true</Property>
 				<Property Name="Source[6].Container.depDestIndex" Type="Int">0</Property>
-				<Property Name="Source[6].destinationIndex" Type="Int">2</Property>
+				<Property Name="Source[6].destinationIndex" Type="Int">3</Property>
 				<Property Name="Source[6].itemID" Type="Ref">/My Computer/Python</Property>
 				<Property Name="Source[6].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[6].type" Type="Str">Container</Property>
@@ -130,7 +141,10 @@
 				<Property Name="Source[7].itemID" Type="Ref">/My Computer/Supporting Files</Property>
 				<Property Name="Source[7].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[7].type" Type="Str">Container</Property>
-				<Property Name="SourceCount" Type="Int">8</Property>
+				<Property Name="Source[8].destinationIndex" Type="Int">4</Property>
+				<Property Name="Source[8].itemID" Type="Ref">/My Computer/Data/SampleLog.txt</Property>
+				<Property Name="Source[8].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="SourceCount" Type="Int">9</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">IPC Flasher</Property>
 				<Property Name="TgtF_internalName" Type="Str">IPC Flasher</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2025 </Property>
